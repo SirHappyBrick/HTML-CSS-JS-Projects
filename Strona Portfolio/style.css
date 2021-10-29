@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(85,9,13);
+    background: linear-gradient(90deg, rgba(85,9,13,1) 0%, rgba(0,0,0,1) 33%, rgba(85,9,13,1) 66%, rgba(0,0,0,1) 94%);
+    overflow-x: hidden;
+}
+
+
+header div.background-image {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+header div div.black-cover {
+    background-color: black;
+    opacity: 0.3;
+    height: 100vh;
+    width: 100%;
+}
+
+header div h1 {
+    color: white;
+    position: absolute;
+    right: 148px;
+    top: 157px;
+    font-size: 66px;
+    font-family: "Uchen";
+    text-transform: uppercase;
+    opacity: 0.98;
+}
+
+header div h2 {
+    color: white;
+    position: absolute;
+    right: 268px;
+    top: 241px;
+    font-size: 48px;
+    font-family: "Uchen";
+    text-transform: uppercase;
+    opacity: 0.98;
+}
+
+section.about h1 {
+    color: white;
+    text-align: center;
+    font-family: "Uchen";
+    font-size: 54px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+section.about div.section-container {
+    padding: 50px 140px;
+}
+
+section.about div.portrait {
+    height: 300px;
+    width: 500px;
+    float: left;
+    padding: 0 0 0 0;
+    shape-outside: circle(50%);
+    position: relative;
+    margin-bottom: 16px;
+}
+
+section.about div.portrait img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+section.about p {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 190%;
+    font-family: "Saira";
+    margin-bottom: 80px;
+    text-align: justify;
+}
+
+section.adobe {
+    height: 35vh;
+}
+
+section.adobe div.adobe-logos img {
+    width: 10%;
+    padding: 12px;
+}
+
+section.adobe {
+    position: relative;
+}
+
+section.adobe div.adobe-logos {
+    position: absolute;
+    top: 45px;
+    left: -700px;
+    transition: 0.4s;
+}
+
+section.adobe div.adobe-show {
+    left: 248px;
+}
+
+section.adobe p {
+    position: absolute;
+    top: -40px;
+    right: 184px;
+    width: 25%;
+    color: white;
+    font-size: 2.0rem;
+    font-family: "Saira";
+    text-align: center;
+    padding: 60px 60px 0 0;
+}
+
+section.languages {
+    position: relative;
+    height: 35vh;
+}
+
+section.languages div.languages-logos {
+    position: absolute;
+    top: 8px;
+    right: -700px;
+    transition: 0.4s;
+}
+
+section.languages div.languages-show {
+    right: 446px;
+}
+
+section.languages div.languages-logos img {
+    width: 180%;
+}
+
+section.languages p {
+    position: absolute;
+    top: 8px;
+    left: 261px;
+    width: 27%;
+    color: white;
+    font-size: 2.0rem;
+    font-family: "Saira";
+    text-align: center;
+    padding: 60px 60px 0 0;
+}
+
+section.responsive {
+    position: relative;
+    height: 50vh;
+}
+
+section.responsive div.responsive-logos {
+    position: absolute;
+    top: 71px;
+    left: -700px;
+    transition: 0.4s;
+}
+
+section.responsive div.responsive-show {
+    left: 263px;
+} 
+
+section.responsive p {
+    position: absolute;
+    top: 56px;
+    right: 184px;
+    width: 25%;
+    color: white;
+    font-size: 2.0rem;
+    font-family: "Saira";
+    text-align: center;
+    padding: 60px 60px 0 0;
+}
+
+footer {
+    height: 20vh;
+}
+
+footer h1 {
+    color: white;
+    text-align: center;
+    font-family: "Uchen";
+    font-size: 54px;
+    text-transform: uppercase;
+    padding: 32px 0;
+}
+
+footer div.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer div.icons div.icons-container {
+    padding: 80px 0 140px 0;
+}
+
+footer div.icons p {
+    color: white;
+    font-family: "Saira";
+    margin-left: 14px;
+}
+
+footer div.icons i {
+    display: flex;
+    color: white;
+    font-size: 2.4rem;
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+
+    header div h1 {
+        right: 44px;
+        top: 186px;
+        font-size: 58px;
+    }
+    header div h2 {
+        right: 157px;
+        top: 254px;
+        font-size: 42px;
+    }
+
+    section.about h1 {
+        font-size: 46px;
+    }
+    
+    section.about div.section-container {
+        padding: 50px 60px;
+    }
+
+    section.about p {
+        font-size: 1.5rem;
+        line-height: 160%;
+    }
+
+    section.adobe p {
+        top: -72px;
+        right: 56px;
+        width: 36%;
+    }
+
+    section.adobe div.adobe-logos {
+        top: 22px;
+    }
+    
+    section.adobe div.adobe-show {
+        left: 198px;
+    }
+
+    section.languages p {
+        top: -4px;
+        left: 164px;
+        width: 37%;
+    }
+
+    section.languages div.languages-logos {
+        position: absolute;
+        top: 24px;
+    }
+
+    section.languages div.languages-show {
+        right: 289px;
+    }
+
+    section.languages div.languages-logos img {
+        width: 150%;
+    }
+
+    section.responsive p {
+        top: 53px;
+        right: 46px;
+        width: 38%;
+    }
+
+    section.responsive div.responsive-logos img {
+        width: 78%;
+    }
+
+    section.responsive div.responsive-show {
+        left: 221px;
+    }
+
+    section.responsive div.responsive-logos {
+        top: 80px;
+    }
+
+    footer div.icons div.icons-container {
+        padding: 80px 0 80px 0;
+    }
+
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    header div h1 {
+        right: 44px;
+        top: 236px;
+        font-size: 42px;
+    }
+    header div h2 {
+        right: 107px;
+        top: 279px;
+        font-size: 35px;
+    }
+
+    section.about h1 {
+        font-size: 46px;
+    }
+    
+    section.about div.section-container {
+        padding: 50px 60px;
+    }
+
+    section.about p {
+        font-size: 1.5rem;
+        line-height: 160%;
+    }
+
+    section.adobe p {
+        top: -102px;
+        right: -8px;
+        width: 46%;
+        font-size: 30px;
+    }
+
+    section.adobe div.adobe-logos {
+        top: 12px;
+        left: 88px;
+    }
+
+    section.languages p {
+        top: -34px;
+        left: 34px;
+        width: 46%;
+        font-size: 30px;
+    }
+
+    section.languages div.languages-logos {
+        top: -8px;
+        right: 197px;
+    }
+
+    section.languages div.languages-logos img {
+        width: 145%;
+    }
+
+    section.responsive p {
+        top: 27px;
+        right: -9px;
+        width: 46%;
+        font-size: 30px;
+    }
+
+    section.responsive div.responsive-logos img {
+        width: 75%;
+    }
+
+    section.responsive div.responsive-logos {
+        top: 60px;
+        left: 86px;
+    }
+
+    footer div.icons div.icons-container {
+        padding: 80px 0 80px 0;
+    }
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+    header div h1 {
+        position: static;
+        font-size: 64px;
+        text-align: center;
+        line-height: 106%;
+        padding-top: 54px;
+    }
+    header div h2 {
+        position: static;
+        font-size: 52px;
+        text-align: center;
+        line-height: 93%;
+    }
+
+    header div div.black-cover {
+        background-color: black;
+        opacity: 0.3;
+        height: 0;
+        width: 100%;
+    }
+
+    section.about h1 {
+        font-size: 52px;
+        line-height: 130%;
+        margin-top: 30px;
+    }
+    
+    section.about div.section-container {
+        padding: 0;
+    }
+
+    section.about div.portrait img {
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
+
+    section.about div.portrait {
+        height: 300px;
+        width: 444px;
+        float: left;
+        padding: 0 0 0 0;
+        shape-outside: circle(50%);
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    section.about p {
+        font-size: 28px;
+        line-height: 154%;
+        padding: 0 8px;
+        margin-bottom: 50px;
+    }
+
+    section.adobe {
+        height: fit-content;
+    }
+
+
+    section.adobe p {
+        position: static;
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.adobe div.adobe-logos img {
+        width: 25%;
+        padding: 12px;
+    }
+
+    section.adobe div.adobe-logos {
+        position: static;
+        padding-left: 144px;
+    }
+
+    section.languages {
+        height: fit-content;
+    }
+
+    section.languages p {
+        position: static;
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.languages div.languages-logos {
+        position: static;
+    }
+
+    section.languages div.languages-logos img {
+        display: block;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.responsive {
+        height: fit-content;
+    }
+
+    section.responsive p {
+        position: static;
+        font-size: 48px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.responsive div.responsive-logos img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.responsive div.responsive-logos {
+        position: static;
+    }
+
+    footer div.icons div.icons-container {
+        padding: 6px 4px;
+    }
+
+    footer h1 {
+        font-size: 64px;
+        line-height: 116%;
+    }
+
+    footer div.icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    footer div.icons i {
+        display: flex;
+        color: white;
+        font-size: 30px;
+    }
+        
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    header div h1 {
+        position: static;
+        font-size: 50px;
+        text-align: center;
+        line-height: 106%;
+        padding-top: 54px;
+    }
+    header div h2 {
+        position: static;
+        font-size: 37px;
+        text-align: center;
+        line-height: 93%;
+    }
+
+    header div div.black-cover {
+        background-color: black;
+        opacity: 0.3;
+        height: 0;
+        width: 100%;
+    }
+
+    section.about h1 {
+        font-size: 44px;
+        line-height: 130%;
+        margin-top: 30px;
+    }
+    
+    section.about div.section-container {
+        padding: 0;
+    }
+
+    section.about div.portrait img {
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
+
+    section.about div.portrait {
+        height: 300px;
+        width: 444px;
+        float: left;
+        padding: 0 0 0 0;
+        shape-outside: circle(50%);
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    section.about p {
+        font-size: 20px;
+        line-height: 154%;
+        padding: 0 8px;
+        margin-bottom: 50px;
+    }
+
+    section.adobe {
+        height: fit-content;
+    }
+
+
+    section.adobe p {
+        position: static;
+        font-size: 34px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.adobe div.adobe-logos img {
+        width: 25%;
+        padding: 12px;
+    }
+
+    section.adobe div.adobe-logos {
+        position: static;
+        padding-left: 90px;
+    }
+
+    section.languages {
+        height: fit-content;
+    }
+
+    section.languages p {
+        position: static;
+        font-size: 34px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.languages div.languages-logos {
+        position: static;
+    }
+
+    section.languages div.languages-logos img {
+        display: block;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.responsive {
+        height: fit-content;
+    }
+
+    section.responsive p {
+        position: static;
+        font-size: 34px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 54px;
+    }
+
+    section.responsive div.responsive-logos img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.responsive div.responsive-logos {
+        position: static;
+    }
+
+    footer div.icons div.icons-container {
+        padding: 6px 4px;
+    }
+
+    footer h1 {
+        font-size: 48px;
+        line-height: 116%;
+    }
+
+    footer div.icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    footer div.icons i {
+        display: flex;
+        color: white;
+        font-size: 20px;
+    }
+        
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+
+    header div h1 {
+        position: static;
+        font-size: 36px;
+        text-align: center;
+        line-height: 106%;
+        padding-top: 40px;
+    }
+    header div h2 {
+        position: static;
+        font-size: 30px;
+        text-align: center;
+        line-height: 122%;
+    }
+
+    header div div.black-cover {
+        background-color: black;
+        opacity: 0.3;
+        height: 0;
+        width: 100%;
+    }
+
+    section.about h1 {
+        font-size: 28px;
+        line-height: 130%;
+        margin-top: 30px;
+    }
+    
+    section.about div.section-container {
+        padding: 0;
+    }
+
+    section.about div.portrait img {
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
+
+    section.about div.portrait {
+        height: 300px;
+        width: 100%;
+        float: none;
+        padding: 0 0 0 0;
+        shape-outside: none;
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    section.about p {
+        font-size: 18px;
+        line-height: 162%;
+        padding: 0 8px;
+        margin-bottom: 50px;
+    }
+
+    section.adobe {
+        height: fit-content;
+    }
+
+
+    section.adobe p {
+        position: static;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    section.adobe div.adobe-logos img {
+        width: 25%;
+        padding: 12px;
+    }
+
+    section.adobe div.adobe-logos {
+        position: static;
+        margin: 0 auto;
+        padding-left: 13px;
+    }
+
+    section.languages {
+        height: fit-content;
+    }
+
+    section.languages p {
+        position: static;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    section.languages div.languages-logos {
+        position: static;
+    }
+
+    section.languages div.languages-logos img {
+        padding: 0;
+        width: 100%;
+    }
+
+    section.responsive {
+        height: fit-content;
+    }
+
+    section.responsive p {
+        position: static;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    section.responsive div.responsive-logos img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.responsive div.responsive-logos {
+        position: static;
+    }
+
+    footer div.icons div.icons-container {
+        padding: 6px 0;
+    }
+
+    footer h1 {
+        font-size: 40px;
+        line-height: 116%;
+    }
+
+    footer div.icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    footer div.icons i {
+        display: flex;
+        color: white;
+        font-size: 20px;
+    }
+        
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+
+    section.adobe div.adobe-logos {
+        padding-left: 0px;
+    }
+        
+}
